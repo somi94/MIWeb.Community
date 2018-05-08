@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file original="" product-name="MIWeb.Community" source-language="en" target-language="de" datatype="plaintext">
+        <body>
+            <trans-unit id="authentication.form.username" xml:space="preserve">
+				<source>E-Mail</source>
+				<target>E-Mail</target>
+			</trans-unit>
+			<trans-unit id="authentication.form.password" xml:space="preserve">
+				<source>Password</source>
+				<target>Passwort</target>
+			</trans-unit>
+			<trans-unit id="authentication.form.submit" xml:space="preserve">
+				<source>Login</source>
+				<target>Absenden</target>
+			</trans-unit>
+			<trans-unit id="authentication.notAllowed" xml:space="preserve">
+				<source>You're not allowed to access the user login.</source>
+				<target>Zugriff verweigert.</target>
+			</trans-unit>
+			<trans-unit id="authentication.failure.title" xml:space="preserve">
+				<source>Login failed!</source>
+				<target state="translated">Anmeldung fehlgeschlagen!</target>
+			</trans-unit>
+			<trans-unit id="authentication.failure.message" xml:space="preserve">
+				<source>With the given credentials the login could not be performed successfully.</source>
+				<target state="translated">Die Anmeldung konnte mit den eingegebenen Zugangsdaten nicht erfolgreich durchgeführt werden.</target>
+			</trans-unit>
+
+            <trans-unit id="registration.form.username" xml:space="preserve">
+				<target>E-Mail</target>
+			</trans-unit>
+			<trans-unit id="registration.form.password" xml:space="preserve">
+				<target>Passwort</target>
+			</trans-unit>
+			<trans-unit id="registration.form.passwordConfirm" xml:space="preserve">
+				<target>Passwort Bestätigung</target>
+			</trans-unit>
+			<trans-unit id="registration.form.submit" xml:space="preserve">
+				<target>Registrieren</target>
+			</trans-unit>
+			<trans-unit id="registration.notAllowed" xml:space="preserve">
+				<target>Zugriff verweigert.</target>
+			</trans-unit>
+			<trans-unit id="registration.failure.title" xml:space="preserve">
+				<target>Registrierung fehlgeschlagen!</target>
+			</trans-unit>
+			<trans-unit id="registration.failure.message" xml:space="preserve">
+				<target>Die Registrierung konnte nicht erfolgreich abgeschlossen werden.</target>
+			</trans-unit>
+			<trans-unit id="registration.failure.message.passwordConfirm" xml:space="preserve">
+				<target>Passwort und Bestätigung stimmen nicht überein.</target>
+			</trans-unit>
+			<trans-unit id="registration.failure.message.existing" xml:space="preserve">
+				<target>Die E-Mail Adresse ist bereits vergeben.</target>
+			</trans-unit>
+        </body>
+    </file>
+</xliff>

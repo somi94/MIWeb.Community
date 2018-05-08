@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file original="" product-name="MIWeb.Community" source-language="en" datatype="plaintext">
+        <body>
+            <trans-unit id="authentication.form.username" xml:space="preserve">
+				<source>E-Mail</source>
+			</trans-unit>
+			<trans-unit id="authentication.form.password" xml:space="preserve">
+				<source>Password</source>
+			</trans-unit>
+			<trans-unit id="authentication.form.submit" xml:space="preserve">
+				<source>Login</source>
+			</trans-unit>
+			<trans-unit id="authentication.notAllowed" xml:space="preserve">
+				<source>You're not allowed to access the user login.</source>
+			</trans-unit>
+			<trans-unit id="authentication.failure.title" xml:space="preserve">
+				<source>Login failed!</source>
+			</trans-unit>
+			<trans-unit id="authentication.failure.message" xml:space="preserve">
+				<source>With the given credentials the login could not be performed successfully.</source>
+			</trans-unit>
+
+            <trans-unit id="registration.form.username" xml:space="preserve">
+				<source>E-Mail</source>
+			</trans-unit>
+			<trans-unit id="registration.form.password" xml:space="preserve">
+				<source>Password</source>
+			</trans-unit>
+			<trans-unit id="registration.form.passwordConfirm" xml:space="preserve">
+				<source>Password Confirmation</source>
+			</trans-unit>
+			<trans-unit id="registration.form.submit" xml:space="preserve">
+				<source>Register</source>
+			</trans-unit>
+			<trans-unit id="registration.notAllowed" xml:space="preserve">
+				<source>You're not allowed to access the user registration.</source>
+			</trans-unit>
+			<trans-unit id="registration.failure.title" xml:space="preserve">
+				<source>Registration failed!</source>
+			</trans-unit>
+			<trans-unit id="registration.failure.message" xml:space="preserve">
+				<source>The registration could not be performed successfully.</source>
+			</trans-unit>
+			<trans-unit id="registration.failure.message.passwordConfirm" xml:space="preserve">
+				<source>Password and confirmation do not match.</source>
+			</trans-unit>
+			<trans-unit id="registration.failure.message.existing" xml:space="preserve">
+				<source>This E-Mail is already taken.</source>
+			</trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,19 @@
+{
+    "description": "",
+    "type": "neos-package",
+    "name": "miweb/community",
+    "require": {
+        "neos/flow": "*",
+        "neos/party": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "MIWeb\\Community\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "MIWeb.Community"
+        }
+    }
+}

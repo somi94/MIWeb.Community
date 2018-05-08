@@ -1,0 +1,22 @@
+privilegeTargets:
+  'Neos\Flow\Security\Authorization\Privilege\Method\MethodPrivilege':
+    'MIWeb.Community:Authentication':
+      matcher: method(Neos\Flow\Security\Authentication\Controller\AbstractAuthenticationController->(?!initialize).*Action()) || method(MIWeb\Projects\Community\Controller\AuthenticationController->(?!initialize).*Action())
+    'MIWeb.Community:Registration':
+      matcher: method(MIWeb\Projects\Community\Controller\RegistrationController->(?!initialize).*Action())
+    'MIWeb.Community:UserManagement':
+      matcher: method(MIWeb\Projects\Community\Controller\UserController->(?!initialize).*Action())
+roles:
+  'Neos.Flow:Everybody':
+    privileges:
+      -
+        privilegeTarget: 'MIWeb.Community:Authentication'
+        permission: GRANT
+      -
+        privilegeTarget: 'MIWeb.Community:Registration'
+        permission: GRANT
+  'MIWeb.Community:User':
+    privileges:
+      -
+        privilegeTarget: 'MIWeb.Community:UserManagement'
+        permission: GRANT

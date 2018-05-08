@@ -1,0 +1,26 @@
+MIWeb:
+  Community:
+    translation:
+      packageKey: 'MIWeb.Community'
+      sourceName: 'Main'
+    registration:
+      defaultRoles:
+        - 'MIWeb.Community:User'
+      defaultAuthenticationProvider: 'DefaultProvider'
+    authentication:
+      package: 'MIWeb.Community'
+      controller: 'Authentication'
+      action: 'authenticate'
+Neos:
+  Flow:
+    security:
+      authentication:
+        providers:
+          DefaultProvider:
+            provider: PersistedUsernamePasswordProvider
+            entryPoint: 'WebRedirect'
+            entryPointOptions:
+              routeValues:
+                '@package': 'MIWeb.Community'
+                '@controller': 'Authentication'
+                '@action': 'index'

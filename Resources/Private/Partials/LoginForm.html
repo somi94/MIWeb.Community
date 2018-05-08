@@ -1,0 +1,33 @@
+<f:security.ifAccess privilegeTarget="MIWeb.Community:Authentication">
+    <f:then>
+        <f:security.ifHasRole role="MIWeb.Community:User">
+            <f:then>
+                <p>You're logged in as <strong>"{account.accountIdentifier}"</strong></p>
+                <f:form action="logout" method="post" class="form-horizontal clearfix" additionalAttributes="{role:'form'}">
+                    <f:form.submit value="Logout" class="btn btn-primary" />
+                </f:form>
+            </f:then>
+            <f:else>
+                <f:flashMessages severity="Error" />
+                <f:form action="{settings.authentication.action}" controller="{settings.authentication.controller}" package="{settings.authentication.package}" method="post" class="form-horizontal clearfix" additionalAttributes="{role:'form'}">
+                    <div class="form-group">
+                        <label for="flowpack-neos-frontendlogin-username" class="col-lg-4 control-label"><f:translate package="{settings.translation.packageKey}" id="authentication.form.username" source="{settings.translation.sourceName}"/>:</label>
+                        <input name="__authentication[Neos][Flow][Security][Authentication][Token][UsernamePassword][username]" class="form-control" id="flowpack-neos-frontendlogin-username" type="text" />
+                    </div>
+                    <div class="form-group">
+                        <label for="flowpack-neos-frontendlogin-password" class="col-lg-4 control-label"><f:translate package="{settings.translation.packageKey}" id="authentication.form.password" source="{settings.translation.sourceName}"/>:</label>
+                        <input name="__authentication[Neos][Flow][Security][Authentication][Token][UsernamePassword][password]" class="form-control" id="flowpack-neos-frontendlogin-password" type="password" />
+                    </div>
+                    <div class="form-group">
+                        <div class="pull-right">
+                            <f:form.submit value="{f:translate(package:settings.translation.packageKey, id:'authentication.form.submit', source: settings.translation.sourceName)}" class="btn btn-primary" />
+                        </div>
+                    </div>
+                </f:form>
+            </f:else>
+        </f:security.ifHasRole>
+    </f:then>
+    <f:else>
+        <p><f:translate package="{settings.translation.packageKey}" id="authentication.notAllowed" source="{settings.translation.sourceName}"/></p>
+    </f:else>
+</f:security.ifAccess>
