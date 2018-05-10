@@ -4,7 +4,8 @@
     "name": "miweb/community",
     "require": {
         "neos/flow": "*",
-        "neos/party": "*"
+        "neos/party": "*",
+        "neos/media": "*"
     },
     "autoload": {
         "psr-4": {
